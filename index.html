@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>angular practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script data-require="angular.js@*" data-semver="4.0.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    <script data-require="angular.js@*" data-semver="4.0.0" src="script.ts"></script>
+    <script data-require="angular.js@*" data-semver="4.0.0" src="system.config.js"></script>
+    <script data-require="angular.js@*" data-semver="4.0.0" src="tsconfig.json"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="ng.js"></script>
+  </head>
+  
+  <body ng-app="githubViewer">
+    <div ng-controller="MainCtrl">
+      <h1>{{message}}</h1>
+      
+      <div>
+        <h2>
+          {{user.name}}
+        </h2>
+        <h3>
+          Address: {{user.location}}
+        </h3>
+      </div>
+
+      <div>
+        <h4>
+          {{user.bio}}
+        </h4>
+      </div>
+
+      <div>
+        <img src=" {{user.avatar_url}} " title=" {{user.login}} " alt=" {{user.login}} ">
+      </div>
+      
+      <div>
+        {{error}}
+      </div>
+  
+    </div>
+  </body>
+</html>
