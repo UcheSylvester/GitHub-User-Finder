@@ -1,6 +1,6 @@
 # GitHub-Viewer
 
-### An simple GitHub Finder that makes finding developers on GitHub and the projects they are working on easier and fun!
+#### An simple GitHub Finder that makes finding developers and their projects on GitHub easier!
 
 Click the link below
 
