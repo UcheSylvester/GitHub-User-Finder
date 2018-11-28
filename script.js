@@ -16,7 +16,7 @@
         console.log(response.data);
         $scope.repos = response.data;
         
-      }
+      };
       
       let onError = function(err) {
         console.log(err);
@@ -29,13 +29,13 @@
       };
 
       
-      $scope.username = 'angular';
+      $scope.username = '';
     
-      $scope.message = 'GITHUB VIEWER';
+      $scope.message = 'GITHUB USER FINDER!';
 
-      $scope.sortOrder = '-stargazers_count'
+      $scope.sortOrder = '-stargazers_count';
 
     };
     
     app.controller('MainCtrl', MainCtrl);
-}())
+}());
